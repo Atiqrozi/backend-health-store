@@ -5,6 +5,7 @@ import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 import morgan from "morgan";
 import dotenv from "dotenv";
+import connectDB from "./config/db.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
 
 // Import routes
@@ -24,6 +25,9 @@ import searchRoutes from "./routes/search.js";
 dotenv.config();
 
 const app = express();
+
+// Connect to database for serverless
+connectDB().catch(console.error);
 
 // 1. Parsing body & cookie
 app.use(express.json());
