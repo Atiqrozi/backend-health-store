@@ -27,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/health-store-backend.git"
+    "url": "https://github.com/Atiqrozi/backend-health-store.git"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
