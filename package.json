@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node api/index.js",
-    "build": "npm install",
-    "vercel-build": "npm install"
+    "build": "mkdir -p public && echo 'API Backend' > public/index.html",
+    "vercel-build": "mkdir -p public && echo 'Health Store API is running' > public/index.html"
   },
   "engines": {
     "node": ">=18.0.0"
