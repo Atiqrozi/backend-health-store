@@ -38,7 +38,8 @@ app.use(
   cors({
     origin: [
       process.env.FRONTEND_URL || "http://localhost:3000",
-      "https://health-store-frontend.vercel.app", // Update with your actual frontend URL
+      "https://frontend-health-store.vercel.app", // Frontend production URL
+      "https://frontend-health-store-*.vercel.app", // Preview deployments
       "http://localhost:3000",
       "http://localhost:3001",
     ],
