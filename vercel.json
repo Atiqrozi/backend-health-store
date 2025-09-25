@@ -1,6 +1,8 @@
 {
   "version": 2,
   "name": "health-store-backend",
+  "buildCommand": "echo 'No build required for API'",
+  "outputDirectory": ".",
   "routes": [
     {
       "src": "/(.*)",
